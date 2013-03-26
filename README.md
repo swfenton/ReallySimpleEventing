@@ -33,7 +33,7 @@ Any types that implement IHandleAsync<TTypeName>() will be executed async.
 
 An event handler is very simple, it looks like this:
 
-    public class TestHandler<TEventType> : IHandle<TEventType>
+    public class TestHandler : IHandle<TEventType>
     {
         public void Handle(TEventType @event)
         {
